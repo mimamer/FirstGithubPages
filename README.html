@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+<script>
+async function githubWisdom(){
+  result=await fetch("https://api.github.com/zen")
+  document.getElementById('demo').innerHTML=await result.text()
+}
+<\script>
 <h2>FirstGithubPages</h2>
 
 <button type="button"
-onclick="document.getElementById('demo').innerHTML = curl https://api.github.com/zen">
+onclick="githubWisdom()">
 Github Wisdom.</button>
 
 <p id="demo"></p>
+
+
+
+
 
 </body>
 </html> 
