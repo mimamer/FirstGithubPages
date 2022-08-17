@@ -3,15 +3,15 @@
 <body>
 <script>
 async function githubWisdom(){
-  result=await fetch("https://api.github.com/zen")
-  document.getElementById('demo').innerHTML=await result.text()
+  result=await fetch("https://api.github.com/zen");
+  document.getElementById('demo').innerHTML=await result.text();
 }
 <\script>
 <h2>FirstGithubPages</h2>
 
 <button type="button"
-onclick="githubWisdom()">
-Github Wisdom.</button>
+onclick="githubWisdom">
+Github Wisdom</button>
 
 <p id="demo"></p>
 
